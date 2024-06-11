@@ -1,0 +1,32 @@
+live_config_reload = true
+
+import = [
+    "~/.config/alacritty/themes/themes/night_owl.toml"
+]
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.92
+blur = true
+padding = {x = 10, y = 10}
+
+[font]
+size = 14.0
+normal = {family = "MesloLGS NF", style = "Regular"}
+bold = {family = "MesloLGS NF", style = "Bold"}
+bold_italic = {family = "MesloLGS NF", style = "Bold Italic"}
+italic = {family = "MesloLGS NF", style = "Italic"}
+
+[cursor]
+style = {shape = "Beam", blinking = "On"}
+thickness = 0.3
+blink_interval = 450
+
+[keyboard]
+bindings = [
+    {key = "z", mods = "Alt", chars = "\nzellij\n"},
+    {key = "z", mods = "Alt|Shift", chars = "\nexit\n"},
+    {key = "Escape", mods = "Shift", chars = "\nbtm\n"},
+    {key = "F", mods = "Alt|Shift", chars = "\nyazi\n"}
+]
